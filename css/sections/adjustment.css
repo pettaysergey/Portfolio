@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body {
+  font-size: 18px;
+  line-height: 1.42; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: FiraSansMedium; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+/*Обнуление стилей заголовков*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+/*Обнуляем списки*/
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  min-height: 100%; }
+
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 50px; }
+
+/*Делаем clearfix*/
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: block; }
+
+.clearfix::after {
+  clear: both; }

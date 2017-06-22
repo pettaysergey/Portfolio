@@ -1,0 +1,44 @@
+/*ДЛЯ САЙДБАРА*/
+.sidebar {
+	width: 220px;
+	float: left;
+	font-family: FiraSansRegular;
+	font-style: 18px;
+	color: #414141;
+	line-height: 44px;
+}
+
+.navigation__list {
+	list-style-type: none;
+	text-align: right;
+}
+
+.navigation__link {
+	display: inline-block;
+	color: #414141;
+	border-right: 6px solid #f6f6f6;
+}
+
+.navigation__link-icon {
+	padding-right: 5px;
+}
+
+.navigation__text {
+	margin-right: 25px;
+}
+
+.navigation__link:hover {
+	color: #33c1e3;
+}
+
+.navigation__link:active {
+	color: #33c1e3;
+	border-right: 6px solid #33c1e3;
+	font-family: FiraSansBold;
+}
+
+.navigation__item_selected .navigation__link {
+	border-right: 6px solid #33c1e3;
+	font-family: FiraSansBold;
+	color: #33c1e3;
+}

@@ -1,0 +1,83 @@
+
+.title {
+	margin: -5px 0 12px 0;
+	padding: 0;
+	font-size: 35px;
+	color: #414141;
+	font-family: FiraSansMedium;
+}
+
+.content {
+	padding-bottom: 20px;
+}
+
+
+/*ДЛЯ ГЛАВНОЙ ИНФОРМАЦИИ НА СТРАНИЦЕ*/
+main.page {
+	width: 720px;
+	float: left;
+}
+
+.about__left {
+	width: 340px;
+	float: left;
+	text-align: center;
+}
+
+.about__picture {
+	display: inline-block;
+}
+
+.about__photo {
+	border-radius: 50%;
+  	border-style: solid;
+  	border-width: 5px;
+  	border-color: rgb(255, 255, 255);
+  	overflow: hidden;
+  	max-width: 100%;
+}
+
+.about__right {
+	width: 380px;
+	float: right;
+}
+
+.about__text {
+	font-size: 18px;
+	color: #414141;
+	font-family: FiraSansLight;
+	height: 315px;
+	overflow: auto;
+	margin-bottom: 69px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+.about__download {
+	text-align: right;
+}
+
+.button {
+	color: #e85f61;
+	font-size: 14px;
+	font-family: OpenSansBold;
+	border: 2px solid #e85f61;
+	border-radius: 30px;
+	padding: 9px 13px;
+}
+
+.button__icon, .button__text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button__text {
+	margin-left: 6px;
+}
+
+.button:hover {
+	background-color: #e85f61;
+	color: #fff;
+}

@@ -1,0 +1,150 @@
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 35px;
+	font-family: FiraSansMedium;
+	color: #414141;
+}
+
+.page {
+	padding-left: 20px;
+}
+
+.career {
+	padding-top: 16px;
+}
+
+.career__left {
+	float: left;
+	width: 220px;
+}
+
+.career__right {
+	float: right;
+	width: 455px;
+}
+
+.career__picture {
+	border-radius: 9px;
+	overflow: hidden;
+}
+
+.career__image {
+	display: block;
+	max-width: 100%; /*максимальная ширина для того, чтобы любая другая загруженная картинка не вылазила за пределы блока*/
+}
+
+.career__list {
+	text-align: right;
+}
+
+.career__item {
+	padding-left: 70px;
+}
+
+.career__block {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+  position: relative; /*ДЛЯ ВЫНОСА ГОДА ЗА ПРЕДЕЛЫ БЛОКА*/
+  margin-bottom: 20px;
+}
+
+.career__block:after, .career__block:before {
+	content: "";
+	display: block;
+	width: 1px;
+	background: #dddddd;
+	position: absolute;
+	right: 100%;
+	margin-right: 20px;
+}
+
+.career__item:first-child .career__block:before, .career__item:last-child .career__block:after {
+	display: none;
+}
+
+ 
+
+.career__block:before{
+	top: 0;
+	bottom: 50%;
+}
+
+.career__block:after {
+	top: 50%;
+	bottom: -25px;
+}
+
+
+
+
+
+/*ДОБАВЛЕНИЕ ЭФФЕКТОВ ПРИ НАВЕДЕНИИ КУРСОРА*/
+.career__item:hover .career__block {
+	background-color: #33c1e3;
+}
+
+.career__item:hover .career__title {
+	color: #fff;
+}
+
+.career__item:hover .career__occupation, .career__item:hover .career__time {
+	color: #fff;
+}
+
+.career__item:hover .career__year {
+	font-weight: bold;
+	color: #33c1e3;
+}
+
+.career__item:hover .career__year:after {
+	border-color: #94e0f2;
+}
+
+
+
+
+
+.career__title {
+	font-size: 21px;
+    color: #5a5a5a;
+    margin-bottom: 5px;
+}
+
+.career__occupation, .career__time {
+	font-size: 18px;
+	color: #414141;
+	font-family: FiraSansLight;
+}
+
+.career__year {
+	position: absolute; /*ДЛЯ ВЫНОСА ГОДА ЗА ПРЕДЕЛЫ БЛОКА*/
+	top: 50%;
+	margin-top: -15px;
+	right: 100%;
+	margin-right: 35px;
+	font-size: 14px;
+	font-family: FiraSansLight;
+	color: #414141;
+	line-height: 30px;
+	z-index: 10;
+}
+
+.career__year:after {   /*СОЗДАНИЕ ТОЧКИ РЯДОМ С ГОДОМ*/
+	content: "";
+	display: block;
+	height: 10px;
+	width: 10px;
+	background-color: #33c1e3;
+	border-radius: 50%;
+	position: absolute;
+	right: -25px;
+	top: 50%;
+	margin-top: -10px;
+	border: 5px solid #f6f6f6; /*СОЗДЕНИЕ НЕВИДИМОЙ ГРАНИЦЫ ДЛЯ ТОЧКИ*/
+}

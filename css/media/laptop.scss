@@ -1,0 +1,129 @@
+// Медиазапросы для футера
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 728px;
+		padding: 0 5px;
+	}	
+
+	.user__name {
+		padding-bottom: 5px;
+	}
+
+
+// Медиазапросы для сайдбара
+	.sidebar {
+		width: 100%;
+	}
+
+	.navigation {
+		// width: 600px;
+		margin-bottom: 33px
+	}
+
+	.navigation__item {
+		display: inline-block;
+	}
+
+	.navigation__link {
+		border-right: 0px;
+		padding-top: 0px; 
+	}
+
+	.navigation__link:active {
+	color: #33c1e3;
+	border-right: 0px solid #33c1e3;
+	font-family: FiraSansBold;
+}
+
+	.navigation__item_selected .navigation__link {
+	border-right: 0px solid #33c1e3;
+	font-family: FiraSansBold;
+	color: #33c1e3;
+}
+
+// Медиазапросы для контента обо мне
+	
+	.page {
+		width: 728px;
+		padding-left: 0px;
+	}
+	
+	.about__left {
+		width: 220px;
+		padding-left: 28px;
+	}
+
+	.about__picture {
+		width: 172px;
+	}
+
+	.about__right {
+		width: 440px;
+		padding-left: 28px;
+	}
+
+	.about__text {
+		height: 365px;
+		overflow: auto;
+		margin-bottom: 60px;
+	}
+
+	.about__download {
+		margin-right: 0px;
+	}
+
+	
+	// Карьера
+
+	.career {
+		padding-top: 23px;
+	}
+
+	.career__left {
+		width: 230px;
+		height: auto;
+	}
+
+	.career__picture {
+		width: 230px;
+    	height: auto;
+	}
+
+	.career__block {
+		width: 355px;
+	}
+
+
+
+	// Портфолио
+
+	.page__portfolio {
+		margin-top: -28px;
+	}
+
+	.portfolio-title {
+		margin-bottom: 18px;
+	}
+
+// Страница приветствия
+
+	.box {
+		width: 355px;
+	}
+
+	.box__photo {
+		top: -50px;
+		width: 105px;
+		height: 105px;
+	}
+	
+	.box__name {
+		margin-top: 70px;
+	}
+
+
+
+}
+
+

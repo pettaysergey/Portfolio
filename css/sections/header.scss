@@ -1,0 +1,135 @@
+.header {
+	background-color: #fff;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	padding-bottom: 9px;
+	margin-bottom: 25px;
+}
+
+.header__left, .header__right {
+	float: left;
+	width: 50%;
+	padding-top: 9px;
+}
+
+.user__photo {
+
+	width: 60px;
+	height: 60px;
+	border: 2px solid #bebebe;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.user__picture {
+	display: block;
+	max-width: 100%;
+    max-height: 100%;
+} 
+
+.user__name {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 240px;
+	margin-left: 15px;
+	font-family: FiraSansRegular;
+	padding-top: 10px;
+}
+
+.header__right {
+	text-align: right;
+	margin-top: 21px;
+}
+
+.contacts-block {
+	position: relative;
+	display: inline-block;
+}
+
+.contacts {
+	font-family: FiraSansBold;
+	color: #33c1e3;
+	border-bottom: 1px dashed #33c1e3;
+
+}
+
+.contacts__icon {
+	display: none;
+}
+
+
+// ВЫПАДАШКА
+
+.dropdown {
+	display: inline-block;
+	position: absolute;
+	text-align: left;
+	white-space: nowrap;
+	margin-top: 20px;
+	top: 100%;
+	// left: 60%;
+	left: -99999999px;
+	// transform: translateX (-50%);
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	background: #fff;
+	z-index: 10;
+}
+
+.dropdown::before {
+	display: block;
+	position: absolute;	
+	content: "";
+	height: 50px;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+}
+
+.dropdown::after {
+	display: block;
+	background: #fff;
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	transform: rotate(225deg);
+	bottom: 93%;
+	left: 65%;
+}
+
+.drop__item {
+	padding: 8px 5px;
+}
+
+.drop__link {
+	display: block;
+	color: #727272;
+}
+
+.drop__icon {
+	margin: 0 4px;
+	color: #33c1e3;
+}
+
+.drop_mail, .drop_phone {
+	border-bottom: 1px dashed #dedede;
+}
+
+
+.contacts-block:hover {
+	.contacts {
+	color: #e85f61;
+	border-bottom: 1px dashed #727272;
+	}
+	.dropdown {
+		left: -90%;
+		font:18px FiraSansRegular;
+		color: #727272;
+		animation: welcome 1.5s;
+	}
+}
+

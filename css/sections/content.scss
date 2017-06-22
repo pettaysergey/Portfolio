@@ -1,0 +1,52 @@
+.content {
+    padding-bottom: 50px;
+}
+
+.page {
+	width: 720px;
+	float: left;
+}
+
+.title {
+	font-family: FiraSansMedium;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 13px;
+	border: 2px solid #e85f61;
+	border-radius: 30px;
+	font-size: 14px;
+	font-family: OpenSansBold;
+	color: #e85f61;
+}
+
+.button__icon, .button__text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button__text {
+	margin-left: 5px;
+}
+
+.button:hover {
+	background-color: #e85f61;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.button_about {
+	background-color: #33c1e3;
+	color: #fff;
+	border: 2px solid #fff;
+	font: 14px FiraSansBold;
+	width: 140px;
+}
+
+.button_about:hover {
+	color: #33c1e3;
+	background-color: #fff;
+}

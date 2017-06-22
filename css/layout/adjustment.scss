@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-size: 18px;
+	font-family: FiraSansLight;
+	color: #414141;
+	-webkit-font-smoothing: antialiased;
+	background-color: #f6f6f6;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* Создаем класс для очистки обтекания */
+.clearfix::before,
+.clearfix::after {
+	content: ' ';
+	display: block;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+	height: 50px;
+}

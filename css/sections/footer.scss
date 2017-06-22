@@ -1,0 +1,55 @@
+.footer {
+	background-color: #414141;
+	height: 50px;
+	color: #9c9c9c;
+	font-size: 14px;
+	margin-top: -50px;
+
+}
+
+.footer__left {
+	float: left;
+	width: 50%;
+	padding-top: 18px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #878787;
+}
+
+.footer__right {
+	float: left;
+	width: 50%;
+	text-align: right;
+	padding-top: 9px;
+
+}
+
+.socials__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.socials__link {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.socials__link_fb {
+	background: url('../../img/icons/icon_sprite.png') 0 0;
+}
+
+.socials__link_vk {
+	background: url('../../img/icons/icon_sprite.png') -31px 0;
+}
+
+.socials__link_tw {
+	background: url('../../img/icons/icon_sprite.png') -62px 0;
+}
+
+.socials__link:hover {
+	-ms-background-position-y: -30px;
+	background-position-y: -30px;
+}
