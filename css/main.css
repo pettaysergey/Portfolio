@@ -59,6 +59,7 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -258,6 +259,7 @@ button:-moz-focusring,
  *    `fieldset` elements in all browsers.
  */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -293,6 +295,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -371,6 +374,7 @@ template {
   display: none; }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -2867,6 +2871,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   vertical-align: middle;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   -webkit-animation: welcome 1.5s;
   animation: welcome 1.5s;
@@ -3034,6 +3039,7 @@ h1 {
 .career__block {
   border-radius: 10px;
   background-color: white;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   width: 380px;
   padding: 20px;
@@ -3137,19 +3143,24 @@ h1 {
   border-radius: 30px;
   font-size: 14px;
   font-family: OpenSansBold;
-  color: #e85f61; }
+  color: #e85f61;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .button:hover {
+    background-color: #e85f61;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
 
-.button__icon, .button__text {
+.button__icon,
+.button__text {
   display: inline-block;
   vertical-align: middle; }
 
 .button__text {
   margin-left: 5px; }
-
-.button:hover {
-  background-color: #e85f61;
-  color: #fff;
-  transition: 0.5s; }
 
 .button_about {
   background-color: #33c1e3;
@@ -3157,10 +3168,9 @@ h1 {
   border: 2px solid #fff;
   font: 14px FiraSansBold;
   width: 140px; }
-
-.button_about:hover {
-  color: #33c1e3;
-  background-color: #fff; }
+  .button_about:hover {
+    color: #33c1e3;
+    background-color: #fff; }
 
 .footer {
   background-color: #414141;
@@ -3186,28 +3196,25 @@ h1 {
 
 .socials__item {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-left: 5px; }
 
 .socials__link {
-  display: block;
+  display: block; }
+  .socials__link:hover .socials__icon {
+    fill: #33c1e3; }
+
+.socials__icon {
   width: 30px;
-  height: 30px; }
-
-.socials__link_fb {
-  background: url("../../img/icons/icon_sprite.png") 0 0; }
-
-.socials__link_vk {
-  background: url("../../img/icons/icon_sprite.png") -31px 0; }
-
-.socials__link_tw {
-  background: url("../../img/icons/icon_sprite.png") -62px 0; }
-
-.socials__link:hover {
-  -ms-background-position-y: -30px;
-  background-position-y: -30px; }
+  height: 30px;
+  fill: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .header {
   background-color: #fff;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   padding-bottom: 9px;
   margin-bottom: 25px; }
@@ -3325,6 +3332,7 @@ h1 {
 .portfolio__item {
   border-radius: 10px;
   background-color: white;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   width: 220px;
   overflow: hidden;
@@ -3334,6 +3342,8 @@ h1 {
 
 .portfolio__link {
   display: block; }
+  .portfolio__link:hover .portfolio__title {
+    color: #e85f61; }
 
 .portfolio__description {
   padding: 15px 15px 15px 17px; }
@@ -3351,7 +3361,10 @@ h1 {
 .portfolio__title {
   font-size: 21px;
   font-family: FiraSansRegular;
-  color: #33c1e3; }
+  color: #33c1e3;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .portfolio__name {
   font-size: 14px;
@@ -3364,16 +3377,14 @@ h1 {
   font-size: 18px;
   font-family: FiraSansRegular; }
 
-.portfolio__type-icon, .portfolio__type-title {
+.portfolio__type-icon,
+.portfolio__type-title {
   display: inline-block;
   vertical-align: middle; }
 
 .portfolio__type-title {
   max-width: 150px;
   font-size: 14px; }
-
-.portfolio__link:hover .portfolio__title {
-  color: #e85f61; }
 
 .sidebar {
   float: left;
@@ -3385,13 +3396,18 @@ h1 {
   padding: 10px 25px 10px 0;
   text-align: right;
   color: #414141;
-  border-right: 6px solid #f6f6f6; }
-
-.navigation__link:hover {
-  color: #33c1e3;
+  border-right: 6px solid #f6f6f6;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s; }
+  .navigation__link:hover {
+    color: #33c1e3;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
 
-.navigation__link-icon, .navigation__link-text {
+.navigation__link-icon,
+.navigation__link-text {
   display: inline-block;
   vertical-align: middle; }
 

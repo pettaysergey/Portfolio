@@ -1,33 +1,34 @@
 .sidebar {
-	float: left;
-	width: 220px;
-	font-family: FiraSansRegular;
+    float: left;
+    width: 220px;
+    font-family: FiraSansRegular;
 }
 
 .navigation__link {
-	display: block;
-	padding: 10px 25px 10px 0;
-	text-align: right;
-	color: #414141;
-	border-right: 6px solid #f6f6f6;
+    display: block;
+    padding: 10px 25px 10px 0;
+    text-align: right;
+    color: #414141;
+    border-right: 6px solid #f6f6f6;
+    transition: 0.5s;
+    &:hover {
+        color: #33c1e3;
+        transition: 0.5s;
+    }
 }
 
-.navigation__link:hover {
-	color: #33c1e3;
-	transition: 0.5s;
-}
-
-.navigation__link-icon, .navigation__link-text {
-	display: inline-block;
-	vertical-align: middle;
+.navigation__link-icon,
+.navigation__link-text {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .navigation__link-text {
-	margin-left: 4px;
+    margin-left: 4px;
 }
 
 .navigation__item_selected .navigation__link {
-	border-right: 6px solid #33c1e3;
-	color: #33c1e3;
-	font-weight: bold;
+    border-right: 6px solid #33c1e3;
+    color: #33c1e3;
+    font-weight: bold;
 }
