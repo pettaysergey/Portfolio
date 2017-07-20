@@ -1,155 +1,117 @@
 // Медиазапросы для хэдера
-
 @media screen and (max-width: 480px) {
-	.container {
-		width: 95%;
-		font-size: 14px;
-	}	
-
-	.header {
-		margin-bottom: 18px;
-	}
-
-	.header__left {
-		width: 90%;
-		font-size: 14px;
-		line-height: 1.42;
-	}
-
-	.user__name {
-		max-width: 50px;
-		padding-bottom: 9px;
-	}
-
-	.header__right {
-		width: 10%;
-	}
-
-	
-	// Медиазапросы для сайдбара
-
-	.sidebar {
-		height: 40px;
-		width: 100%;
-	}
-
-	.navigation__link-icon {
-		display: none;
-	}
-
-	.navigation__link {
-		padding-right: 10px;
-	}
-
-
-	// Медиазапросы для контента обо мне
-
-	.content {
-		padding-bottom: 0;
-	}
-
-	.page {
-		width: 95%;
-	}
-
-	.about {
-		width: 100%;
-	}
-
-	.about__left {
-		width: 100%;
-
-	}
-
-	.about__picture {
-		width: 150px;
-		text-align: center;
-	}
-
-	.about__right {
-		padding-left: 0;
-	}
-
-	.title {
-		width: 90%;
-		text-align: center;
-		margin-bottom: 10px;
-	}
-
-	.about__text {
-		width: 100%;
-		height: auto;
-		margin-bottom: 10px;
-		padding-left: 0px;
-
-	}
-
-	.about__download {
-		width: 100%;
-	}
-
-// Карьера
-	
-	.page {
-		width: 100%;
-	}
-	
-	.career {
-		padding-top: 10px;
-	}
-	
-	.career__item {
-		margin-left: 1px;
-		margin-right: 1px;
-	}
-
-	.career__block {
-		width: 100%;
-		margin-left: 0;
-	}
-
-	.career__right {
-		width: 100%;
-	}
-
-// Портфолио
-	
-	.page__portfolio {
-	padding-top: 30px;
-	}
-
-	.portfolio__item {
-		width: 95%;
-	}
-
-
-// Медиазапросы для футера
-
-	.footer {
- 		height: 115px;
- 	}
-
- 	.wrapper:after {
-	content: "";
-	display: block;
-	height: 85px;
-	}
-	
-	.footer__left {
-		width: 100%;
-		text-align: center;
-	}
-
-	.footer__right {
-		width: 100%;
-		text-align: center;
-	}
-
-// Приветствие
-
-	.box {
-		width: 300px;
-	}
-
-
+    .container {
+        width: 95%;
+        font-size: 14px;
+    }
+    .header {
+        margin-bottom: 18px;
+    }
+    .header__left {
+        width: 90%;
+        font-size: 14px;
+        line-height: 1.42;
+    }
+    .user__name {
+        max-width: 50px;
+        padding-bottom: 9px;
+    }
+    .header__right {
+        width: 10%;
+    }
+    // Медиазапросы для сайдбара
+    .sidebar {
+        height: 40px;
+        width: 100%;
+    }
+    .navigation__link-icon {
+        display: none;
+    }
+    .navigation__link {
+        padding-right: 10px;
+    }
+    // Медиазапросы для контента обо мне
+    .content {
+        padding-bottom: 0;
+    }
+    .page {
+        width: 95%;
+    }
+    .about {
+        width: 100%;
+    }
+    .about__left {
+        width: 100%;
+    }
+    .about__picture {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+    }
+    .about__right {
+        padding-left: 0;
+    }
+    .title {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about__text {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding-left: 0px;
+    }
+    .about__download {
+        width: 100%;
+    }
+    // Карьера
+    .page {
+        width: 100%;
+    }
+    .career {
+        padding-top: 10px;
+    }
+    .career__item {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .career__block {
+        width: 100%;
+        margin-left: 0;
+    }
+    .career__right {
+        width: 100%;
+    }
+    // Портфолио
+    .page__portfolio {
+        padding-top: 30px;
+    }
+    .portfolio__item {
+        width: 95%;
+    }
+    // Медиазапросы для футера
+    .footer {
+        height: 115px;
+    }
+    .wrapper:after {
+        content: "";
+        display: block;
+        height: 85px;
+    }
+    .footer__left {
+        width: 100%;
+        text-align: center;
+    }
+    .footer__right {
+        width: 100%;
+        text-align: center;
+    }
+    // Приветствие
+    .background {
+        transform: scale(1.6);
+    }
+    .box {
+        width: 300px;
+    }
 }

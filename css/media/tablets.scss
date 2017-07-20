@@ -1,184 +1,143 @@
 // Медиазапросы для хэдера
-
 @media screen and (max-width: 768px) {
-	.container {
-		width: 480px;
-	}	
-	
-	.contacts__main {
-		display: none;
-	}
-
-	.contacts__icon {
-		display: block;
-		font-size: 40px;
-	}
-
-	.header__right {
-		margin-top: 12px;
-	}
-
-	// Медиазапросы для сайдбара
-	.sidebar {
-		width: 100%;
-	}
-
-	.navigation {
-		margin-bottom: 33px
-	}
-
-	.navigation__item {
-		display: inline-block;
-	}
-
-	.navigation__link {
-		border-right: 0px;
-		padding-top: 0px; 
-	}
-
-	.navigation__link:active {
-	color: #33c1e3;
-	border-right: 0px solid #33c1e3;
-	font-family: FiraSansBold;
+    .container {
+        width: 480px;
+    }
+    .contacts__main {
+        display: none;
+    }
+    .contacts__icon {
+        display: block;
+        font-size: 40px;
+    }
+    .header__right {
+        margin-top: 12px;
+    }
+    // Медиазапросы для сайдбара
+    .sidebar {
+        width: 100%;
+    }
+    .navigation {
+        margin-bottom: 33px
+    }
+    .navigation__item {
+        display: inline-block;
+    }
+    .navigation__link {
+        border-right: 0px;
+        padding-top: 0px;
+    }
+    .navigation__link:active {
+        color: #33c1e3;
+        border-right: 0px solid #33c1e3;
+        font-family: FiraSansBold;
+    }
+    .navigation__item_selected .navigation__link {
+        border-right: 0px solid #33c1e3;
+        font-family: FiraSansBold;
+        color: #33c1e3;
+    }
+    // Медиазапросы для контента обо мне
+    .page {
+        padding-left: 0;
+        width: 100%;
+    }
+    .about__left {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 8px;
+    }
+    .about__right {
+        width: 100%;
+    }
+    .title {
+        display: block;
+        width: 420px;
+        padding-left: 10px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .about__text {
+        // width: 100%;
+        text-align: center;
+        height: 365px;
+        // padding-left: 25px;
+        margin-bottom: 38px;
+    }
+    .about__text p {
+        display: inline-block;
+        text-align: left;
+    }
+    .about__download {
+        // width: 480px;
+        text-align: center;
+    }
+    // Карьера
+    .content-title {
+        display: block;
+        text-align: center;
+    }
+    .career__left {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .career__right {
+        float: none;
+    }
+    .career__block {
+        width: 440px;
+        margin-left: 20px;
+    }
+    .career__block:after,
+    .career__block:before {
+        display: none;
+    }
+    .career__year {
+        display: none;
+    }
+    .career__item {
+        padding: 0;
+        text-align: center;
+    }
+    // Портфолио
+    // Пересчитываю ширину для блоков
+    .portfolio-title {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .portfolio__item {
+        width: calc(100%/2 - 20px);
+    }
+    // Медиазапросы для футера
+    .footer {
+        height: 95px;
+    }
+    .wrapper:after {
+        content: "";
+        display: block;
+        height: 95px;
+    }
+    .footer__left {
+        width: 100%;
+        text-align: center;
+    }
+    .footer__right {
+        width: 100%;
+        text-align: center;
+    }
+    // Медиазапрос для всплывашки
+    .contacts-block:hover {
+        .dropdown {
+            left: -210px;
+            top: 90%;
+        }
+    }
+    .dropdown::after {
+        bottom: 93%;
+        left: 82%;
+    }
 }
-
-	.navigation__item_selected .navigation__link {
-	border-right: 0px solid #33c1e3;
-	font-family: FiraSansBold;
-	color: #33c1e3;
-}
-
-// Медиазапросы для контента обо мне
-	 .page {
-	 	padding-left: 0;
-	 	width: 100%;
-	 }
-	.about__left {
-		width: 100%;
-		text-align: center;
-		padding-right: 0;
-		padding-left: 0;
-		margin-bottom: 8px;
-	}
-
-	.about__right {
-		width: 100%;
-	}
-
-	.title {
-		display: block;
-		width: 420px;
-		padding-left: 10px;
-		text-align: center;
-		margin-bottom: 8px;
-	}
-
-	.about__text {
-		// width: 100%;
-		text-align: center;
-		height: 365px;
-		// padding-left: 25px;
-		margin-bottom: 38px;
-	}
-
-	.about__text p {
-		display: inline-block;
-		text-align: left;
-	}
-
-	.about__download {
-		// width: 480px;
-		text-align: center;
-	}
-
-
-	// Карьера
-
-	.content-title {
-		display: block;
-		text-align: center;
-	}
-
-	.career__left {
-		float: none;
-		margin: 0 auto;
-		margin-bottom: 20px;
-	}
-
-	.career__right {
-		float: none;
-	}
-
-	.career__block {
-		width: 440px;
-		margin-left: 20px;
-	}
-
-	.career__block:after, .career__block:before {
-		display: none;
-	}
-
-	.career__year {
-		display: none;
-	}
-
-	.career__item {
-		padding: 0;
-		text-align: center;
-	}
-	
-
-
-	// Портфолио
-
-	// Пересчитываю ширину для блоков
-
-	.portfolio-title {
-		width: 100%;
-		display: block;
-		text-align: center;
-	} 
-
-	.portfolio__item {
-		width: calc(100%/2 - 20px); 
-	}
-
-
-// Медиазапросы для футера
-
- 	.footer {
- 		height: 95px;
- 	}
-
- 	.wrapper:after {
-	content: "";
-	display: block;
-	height: 95px;
-	}
-	
-	.footer__left {
-		width: 100%;
-		text-align: center;
-	}
-
-	.footer__right {
-		width: 100%;
-		text-align: center;
-	}
-
-
-
-// Медиазапрос для всплывашки
-	.contacts-block:hover {
-	.dropdown {
-		left: -210px;
-		top: 90%;
-	}
-}
-
-	.dropdown::after {
-	bottom: 93%;
-	left: 82%;
-}
-}
-

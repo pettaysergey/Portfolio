@@ -40,13 +40,13 @@
 }
 
 .button_about {
-    background-color: #33c1e3;
+    // background-color: #33c1e3;
     color: #fff;
     border: 2px solid #fff;
     font: 14px FiraSansBold;
     width: 140px;
     &:hover {
-        color: #33c1e3;
+        color: rgba(122, 100, 86, .75);
         background-color: #fff;
     }
 }
